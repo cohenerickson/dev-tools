@@ -1,1 +1,14 @@
-UI
+UI:
+  Priority: MEDIUM
+
+Polish code execution:
+  Priority: HIGH
+
+Browser Detection:
+  Priority: LOW
+
+Console Functions:
+  Priority: HIGH
+
+Element Inspector:
+  Priority: MEDIUM
