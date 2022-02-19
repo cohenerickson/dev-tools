@@ -20,4 +20,4 @@ Place the following scrpt tag in the `<head>` of your html:
 
 Drag the following link into the bookmarks bar:
 
-[Dev Tools](javascript:(()=>{this.script=document.createElement("script");this.script.type="module";this.script.src="https://cdn.jsdelivr.net/gh/cohenerickson/dev-tools/devtools/devtools.js";document.documentElement.appendChild(this.script)})())
+[Dev Tools](javascript:(()=>{this.script=document.createElement("script");this.script.type="module";this.script.src="https://raw.githack.com/cohenerickson/dev-tools/main/devtools/devtools.js";document.documentElement.appendChild(this.script)})())
