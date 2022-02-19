@@ -12,3 +12,6 @@ Console Functions:
 
 Element Inspector:
   Priority: MEDIUM
+
+Window Resize:
+  Priority: LOW

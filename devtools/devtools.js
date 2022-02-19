@@ -12,6 +12,7 @@ iframe.style.top = "0"
 iframe.frameBorder = "0";
 iframe.src = "https://dev-tools.cohenerickson.repl.co/console.html"
 iframe.id = "devtools";
+iframe.style.zIndex = "2147483647";
 iframe.style.display = localStorage.getItem("debugger-view") || "none";
 document.body.appendChild(iframe);
 
