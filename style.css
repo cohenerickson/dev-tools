@@ -1,0 +1,244 @@
+/* Variables */
+:root {
+  --bg: #ffffff;
+  --bg-warn: #FFFBE5;
+  --bg-error: #FFF0F0;
+  --border: #CACDD1;
+  --border-warn: #FFF5C2;
+  --border-error: #FFD6D6;
+  --tabs: #F1F3F4;
+  --tabs-bg: #F1F3F4;
+  --tabs-hover-bg: #DEE1E6;
+  --active: #1a73e8;
+  --text: #464646;
+  --text-warn: #5C3C00;
+  --text-error: #FF0000;
+  --text-link: #5e6268;
+  --text-link-hover: #272124;
+  --text-string:;
+  --text-number:;
+  --text-boolean:;
+  --text-undefind:;
+  --text-tags:;
+  --text-css:;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #202124;
+    --bg-warn: #332B00;
+    --bg-error: #290000;
+    --border: #494C50;
+    --border-warn: #665500;
+    --border-error: #5C0000;
+    --tabs: #2a2a2a;
+    --tabs-bg: #000;
+    --tabs-hover-bg: #35363A;
+    --active: #1a73e8;
+    --text: #cdc8d1;
+    --text-warn: #F2AB26;
+    --text-error: #FF8080;
+    --text-link: #9ba0a7;
+    --text-link-hover: #E8EAED;
+    --text-string:;
+    --text-number:;
+    --text-boolean:;
+    --text-undefind:;
+    --text-tags:;
+    --text-css:;
+  }
+}
+
+/* Fonts */
+@font-face {font-family: Consolas;src: url(./assets/fonts/consolas.ttf);}
+@font-face {font-family: Consolas-italic;src: url(./assets/fonts/consolas-italic.ttf);}
+
+/* General */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  border-left: 1px solid var(--border);
+  height: 100vh; 
+}
+
+/* Navigation */
+#navigation {
+  background: var(--tabs);
+  font-family: sans-serif;
+  font-size: 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--border);
+  padding-left: 4px;
+}
+
+#btns span {
+  position: relative;
+  top: 5px;
+  margin: 0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#btns span img {
+  height: 15px;
+  filter: invert(64%) sepia(8%) saturate(120%) hue-rotate(314deg) brightness(93%) contrast(81%);
+}
+
+#btns span img:hover {
+  filter: invert(12%) sepia(1%) saturate(4819%) hue-rotate(188deg) brightness(100%) contrast(97%);
+}
+
+#btns .active, #btns .active:hover {
+  filter: invert(69%) sepia(26%) saturate(993%) hue-rotate(187deg) brightness(99%) contrast(96%);
+}
+
+.vertical-line {
+  border-left: 1px solid var(--border);
+  padding-right: 6px;
+}
+
+/* tabs */
+#navigation #tabs span {
+  margin: 0;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#navigation #tabs .active {
+  border-bottom: 2px solid var(--active);
+  background: var(--tabs-bg);
+}
+
+#navigation #tabs .nav-btn:hover {
+  background: var(--tabs-hover-bg);
+  border-bottom: 2px solid var(--tabs-hover-bg);
+}
+
+#navigation #tabs .active:hover {
+  border-bottom: 2px solid var(--active);
+}
+
+@media (prefers-color-scheme: dark) {
+  #navigation #tabs .active {
+    background: var(--tabs-bg);
+    border-bottom: 2px solid var(--tabs-bg);
+  }
+
+  #navigation #tabs .active:hover {
+    background: var(--tabs-bg);
+    border-bottom: 2px solid var(--tabs-bg);
+  }
+
+  #btns span img:hover {
+    filter: invert(96%) sepia(7%) saturate(74%) hue-rotate(177deg) brightness(98%) contrast(90%);
+  }
+}
+
+/* right align */
+.right {
+  position: absolute;
+  right: 0;
+}
+
+/* Labels */
+#msg-labels {
+  position: relative;
+  top: 1px;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 1px;
+  margin-right: 10px;
+  margin-left: 8px;
+}
+
+.label-wrapper {
+  margin-right: 2px;
+  margin-left: 2px;
+  /* display: none; */
+}
+
+.label-wrapper img {
+  height: 10px;
+  position: relative;
+  top: 1px;
+  margin-right: 3px;
+}
+
+/* Sections */
+#sections .section {
+  display: none;
+}
+
+#sections .shown {
+  display: block;
+  font-family: Consolas;
+}
+
+#sections #section-console {
+  height: calc(100% - 28px);
+  overflow: auto;
+}
+
+#section-console #carret {
+  height: 10px;
+  padding: 5px;
+  filter: invert(69%) sepia(26%) saturate(993%) hue-rotate(187deg) brightness(99%) contrast(96%);
+}
+
+#console-input {
+  border: 0;
+  width: 95%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  background: var(--bg);
+  color: var(--text);
+  resize: none;
+  font-size: 12px;
+}
+#console-input:focus {
+  outline: none !important;
+}
+
+/* Console message */
+.message {
+  font-size: 12px;
+  font-family: Consolas;
+  border: 1px solid var(--border);
+  padding: 2px;
+  padding-left: 30px;
+}
+
+.message .right {
+  color: var(--text-link);
+  right: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.message .right:hover {
+  color: var(--text-link-hover);
+}
+
+.warning {
+  color: var(--text-warn);
+  background: var(--bg-warn);
+  border: 1px solid var(--border-warn);
+}
+
+.error {
+  color: var(--text-error);
+  background: var(--bg-error);
+  border: 1px solid var(--border-error);
+}
+
+.message span img {
+  position: absolute;
+  padding-top: 4px;
+  left: 15px;
+  height: 8px;
+}
