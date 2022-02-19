@@ -14,7 +14,7 @@ Dev Tools v1
 
 Place the following scrpt tag in the `<head>` of your html:
 
-`<script type="module" src="https://cdn.jsdelivr.net/gh/cohenerickson/dev-tools/devtools/devtools.js"></script>`
+`<script type="module" src="https://raw.githack.com/cohenerickson/dev-tools/main/devtools/devtools-copy.js"></script>`
 
 ### Bookmarklet method
 
