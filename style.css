@@ -211,6 +211,7 @@ body {
   border: 1px solid var(--border);
   padding: 2px;
   padding-left: 30px;
+  min-height: 15px;
 }
 
 .message .right {
@@ -220,7 +221,13 @@ body {
   cursor: pointer;
 }
 
-.message .right:hover {
+.link {
+  color: var(--text-link);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.message .right:hover, .link:hover {
   color: var(--text-link-hover);
 }
 

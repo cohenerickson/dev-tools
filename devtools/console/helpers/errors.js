@@ -1,8 +1,7 @@
+import error from "../elements/error.js";
+
 export default function (e) {
-  let window = document.getElementById("devtools").contentWindow.document;
-  let count = parseInt(window.getElementById("label-x").innerText);
-  window.getElementById("label-x").innerHTML = "<img src='https://dev-tools.cohenerickson.repl.co/assets/icons/x.svg'>" + (count+1);
-  try {
-    console.error(e.error.stack);
-  } catch {}
+  let stack = e.error.stack.toString().split(/\r\n|\n/);
+  let init = stack[2].split("at ")[1];
+  error({message:[e.error.stack], init: init});
 }

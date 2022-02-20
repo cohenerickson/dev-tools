@@ -15,3 +15,9 @@ Element Inspector:
 
 Window Resize:
   Priority: LOW
+
+Syntax Highligting:
+  Priority: LOW
+
+Betterify Urlify:
+  Priority: LOW
