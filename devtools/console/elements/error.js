@@ -21,7 +21,7 @@ export default function (data) {
 }
 
 function urlify(text) {
-  var urlRegex = /(https?:\/\/[^\s]+)/g;
+  var urlRegex = /(https?:\/\/[^\s,\)]+)/g;
   return text.replace(urlRegex, function(url) {
     return "<span class='link'>" + url.split("/")[url.split("/").length-1] + "</span>";
   });

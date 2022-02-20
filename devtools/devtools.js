@@ -26,6 +26,17 @@ window.debugger.console = {
 document.getElementById("devtools").contentWindow.window.addEventListener("error", errorHandle, true);
 window.addEventListener("error", errorHandle, true);
 
+// debugger execute
+window.debugger.execute = () => {
+  let window = document.getElementById("devtools").contentWindow.document;
+  let script = window.getElementById("console-input").value;
+  window.getElementById("console-input").value = "";
+  message({message: [script], init:""});
+  let element = document.createElement("script");
+  element.innerHTML = script;
+  document.body.appendChild(element);
+}
+
 // debugger tab change
 window.debugger.view = (id) => {
   let window = document.getElementById("devtools").contentWindow.document;
@@ -53,17 +64,6 @@ window.debugger.close = () => {
   w.style.display = "none";
   localStorage.setItem("debugger-view", "none");
   document.body.width = window.innerWidth;
-}
-
-// debugger execute
-window.debugger.execute = () => {
-  let window = document.getElementById("devtools").contentWindow.document;
-  let script = window.getElementById("console-input").value;
-  window.getElementById("console-input").value = "";
-  message({message: [script], init:""});
-  let element = document.createElement("script");
-  element.innerHTML = script;
-  document.body.appendChild(element);
 }
 
 // toggle debugger

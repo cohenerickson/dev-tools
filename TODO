@@ -1,7 +1,7 @@
 UI:
   Priority: MEDIUM
 
-Polish code execution:
+Polish Code Execution:
   Priority: HIGH
 
 Browser Detection:
@@ -19,5 +19,5 @@ Window Resize:
 Syntax Highligting:
   Priority: LOW
 
-Betterify Urlify:
+Fix Error Handling Routes:
   Priority: LOW
