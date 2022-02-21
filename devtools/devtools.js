@@ -15,6 +15,7 @@ iframe.id = "devtools";
 iframe.style.zIndex = "2147483647";
 iframe.style.display = localStorage.getItem("debugger-view") || "none";
 document.body.appendChild(iframe);
+document.getElementById("devtools")
 
 // global debugger object
 window.debugger = window.debugger || {};

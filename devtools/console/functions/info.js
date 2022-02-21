@@ -8,7 +8,6 @@ export default function () {
     throw e;
   }
   let stack = e.stack.toString().split(/\r\n|\n/);
-
   let init = stack[2].split("at ")[1];
 
   log({message:[...arguments], init: init});

@@ -13,14 +13,9 @@
   --text: #464646;
   --text-warn: #5C3C00;
   --text-error: #FF0000;
+  --text-debug: #464646;
   --text-link: #5e6268;
   --text-link-hover: #272124;
-  --text-string:;
-  --text-number:;
-  --text-boolean:;
-  --text-undefind:;
-  --text-tags:;
-  --text-css:;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,14 +33,9 @@
     --text: #cdc8d1;
     --text-warn: #F2AB26;
     --text-error: #FF8080;
+    --text-debug: #3A87FF;
     --text-link: #9ba0a7;
     --text-link-hover: #E8EAED;
-    --text-string:;
-    --text-number:;
-    --text-boolean:;
-    --text-undefind:;
-    --text-tags:;
-    --text-css:;
   }
 }
 
@@ -241,6 +231,10 @@ body {
   color: var(--text-error);
   background: var(--bg-error);
   border: 1px solid var(--border-error);
+}
+
+.debug {
+  color: var(--text-debug);
 }
 
 .message span img {
