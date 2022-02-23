@@ -16,7 +16,7 @@ export default function (data) {
   messages.appendChild(div);
   
   let count = parseInt(w.getElementById("label-i").innerText);
-  w.getElementById("label-i").innerHTML = "<img src='https://dev-tools.cohenerickson.repl.co/assets/icons/i.svg'>" + (count+1);
+  w.getElementById("label-i").innerHTML = "<img src='https://dev-tools.cohenerickson.repl.co/devtools/assets/icons/i.svg'>" + (count+1);
 }
 
 function urlify(text) {

@@ -11,13 +11,13 @@ export default function (data) {
   message = message.split("\n").join("<br>").split(" ").join("&nbsp;");
   message = message.split("span&nbsp;class='link'").join("span class='link'");
   
-  div.innerHTML = `<span class="right">${init}</span><span><img src='https://dev-tools.cohenerickson.repl.co/assets/icons/!.svg'>${message || "undefined"}</span>`;
+  div.innerHTML = `<span class="right">${init}</span><span><img src='https://dev-tools.cohenerickson.repl.co/devtools/assets/icons/!.svg'>${message || "undefined"}</span>`;
   
   let messages = w.getElementById("console-box");
   messages.appendChild(div);
   
   let count = parseInt(w.getElementById("label-!").innerText);
-  w.getElementById("label-!").innerHTML = "<img src='https://dev-tools.cohenerickson.repl.co/assets/icons/!.svg'>" + (count+1);
+  w.getElementById("label-!").innerHTML = "<img src='https://dev-tools.cohenerickson.repl.co/devtools/assets/icons/!.svg'>" + (count+1);
 }
 
 function urlify(text) {

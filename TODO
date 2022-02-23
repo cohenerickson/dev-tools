@@ -21,3 +21,6 @@ Syntax Highligting:
 
 Fix Error Handling Routes:
   Priority: LOW
+
+Only overite functions that are supported:
+  Priortiy: MEDIUM
