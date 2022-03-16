@@ -15,12 +15,12 @@ Dev Tools v1
 Place the following scrpt tag in the `<head>` of your html:
 
 ```
-<script type="module" src="https://raw.githack.com/cohenerickson/dev-tools/main/dist/assets/index.a4e9989f.js"></script>
+<script type="module" src="https://raw.githack.com/cohenerickson/dev-tools/main/dist/assets/index.d659854f.js"></script>
 ```
 
 ### Bookmarklet method
 
 Create a new bookmark and set the url to the following:
 ```
-javascript:(()=>{this.script=document.createElement("script");this.script.type="module";this.script.src="https://raw.githack.com/cohenerickson/dev-tools/main/dist/assets/index.a4e9989f.js";document.documentElement.appendChild(this.script)})())
+javascript:(()=>{this.script=document.createElement("script");this.script.type="module";this.script.src="https://raw.githack.com/cohenerickson/dev-tools/main/dist/assets/index.d659854f.js";document.documentElement.appendChild(this.script)})())
 ```
