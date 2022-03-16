@@ -15,7 +15,7 @@ iframe.id = "devtools";
 iframe.style.zIndex = "2147483647";
 iframe.style.display = localStorage.getItem("debugger-view") || "none";
 document.body.appendChild(iframe);
-fetch("devtools/console.html")
+fetch("https://dev-tools.cohenerickson.repl.co/devtools/console.html")
   .then(response => response.text())
   .then(data => {
     document.getElementById("devtools").contentWindow.document.documentElement.innerHTML = data;
